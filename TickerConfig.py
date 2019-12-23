@@ -9,7 +9,9 @@ TICKET_TYPE = 1
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-18"
+    "2020-01-17",
+    "2020-01-18",
+    "2020-01-19"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
@@ -18,10 +20,10 @@ STATION_DATES = [
 STATION_TRAINS = []
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "广州南"
+FROM_STATION = "广州"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "隆回"
+TO_STATION = "乌鲁木齐"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -33,7 +35,7 @@ TO_STATION = "隆回"
 # "硬座",
 # "无座",
 # "动卧",
-SET_TYPE = ["二等座"]
+SET_TYPE = ["硬卧"]
 
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
 # bool
@@ -45,8 +47,8 @@ IS_MORE_TICKET = True
 TICKET_PEOPLES = []
 
 # 12306登录账号
-USER = ""
-PWD = ""
+USER = "18503038114"
+PWD = "Fanfanbh.89757"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -81,17 +83,17 @@ HTTP_TYPE = "http"
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "",
-    "notice_email_list": "",
-    "username": "",
-    "password": "",
+    "email": "547878909@qq.com",
+    "notice_email_list": "547878909@qq.com",
+    "username": "547878909",
+    "password": "dqoejlnpspeibffg",
     "host": "smtp.qq.com",
 }
 
 # 是否开启 server酱 微信提醒， 使用前需要前往 http://sc.ftqq.com/3.version 扫码绑定获取 SECRET 并关注获得抢票结果通知的公众号
 SERVER_CHAN_CONF = {
-    "is_server_chan": False,
-    "secret": ""
+    "is_server_chan": True,
+    "secret": "SCU42020Tcbcddcb1fa738da62670ea662aa113af5c417391f3129"
 }
 
 # 是否开启cdn查询，可以更快的检测票票 1为开启，2为关闭
